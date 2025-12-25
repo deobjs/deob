@@ -1,5 +1,5 @@
-import { describe, expect, test } from "bun:test";
 import { deobfuscate } from "#src";
+import { describe, expect, test } from "bun:test";
 import * as fs from "node:fs";
 import * as path from "node:path";
 

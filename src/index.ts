@@ -1,6 +1,6 @@
-import { parseSync } from "oxc-parser";
 import { print } from "esrap";
 import ts from "esrap/languages/ts";
+import { parseSync } from "oxc-parser";
 import { format, type FormatOptions } from "oxfmt";
 
 interface Config {
