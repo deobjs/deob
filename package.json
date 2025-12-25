@@ -1,0 +1,32 @@
+{
+  "name": "deob",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "GameRoMan",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/**/*"
+  ],
+  "type": "module",
+  "imports": {
+    "#src": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "build": "bunx --bun tsdown",
+    "test": "bun test",
+    "npm:publish": "bun run build && bun publish"
+  },
+  "dependencies": {
+    "esrap": "^2.2.1",
+    "oxc-parser": "^0.105.0"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.20.0",
+    "oxlint": "^1.35.0",
+    "tsdown": "^0.18.3",
+    "typescript": "^5.9.3"
+  }
+}
