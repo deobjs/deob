@@ -4,7 +4,6 @@
   "license": "MIT",
   "author": "GameRoMan",
   "files": [
-    "LICENSE",
     "README.md",
     "dist/**/*"
   ],
@@ -14,19 +13,19 @@
   },
   "scripts": {
     "lint": "oxlint",
-    "format": "oxfmt",
+    "format": "oxfmt --list-different || oxfmt",
     "build": "bunx --bun tsdown",
     "test": "bun test",
-    "npm:publish": "bun run build && bun publish"
+    "prepublishOnly": "bun run build"
   },
   "dependencies": {
-    "esrap": "^2.2.1",
-    "oxc-parser": "^0.105.0"
+    "esrap": "^2.2.2",
+    "oxc-parser": "^0.110.0"
   },
   "devDependencies": {
-    "oxfmt": "^0.20.0",
-    "oxlint": "^1.35.0",
-    "tsdown": "^0.18.3",
+    "oxfmt": "^0.26.0",
+    "oxlint": "^1.41.0",
+    "tsdown": "^0.20.1",
     "typescript": "^5.9.3"
   }
 }
